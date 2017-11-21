@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context="nordam.ruc.dk.pianoplayer.MainActivity">
 
+    <Button
+        android:id="@+id/drumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/beatcolor"
+        android:fontFamily="monospace"
+        android:text="BEAT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintRight_toLeftOf="@+id/stopButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/clayout"
+        android:fontFamily="monospace"
+        android:text="STOP"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
@@ -14,111 +44,137 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0">
 
     </android.support.constraint.ConstraintLayout>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/colorbutton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text=" C / B#"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintRight_toLeftOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="D"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintRight_toLeftOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="E / Fb"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintRight_toLeftOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="F / E#"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
         app:layout_constraintRight_toRightOf="@+id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="G"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintLeft_toRightOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="A"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintLeft_toRightOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/whitekeys"
+        android:soundEffectsEnabled="false"
         android:stateListAnimator="@null"
+        android:text="B /Cb"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintLeft_toRightOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintTop_toTopOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <Button
@@ -126,49 +182,106 @@
         android:layout_width="50dp"
         android:layout_height="250dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="28dp"
         android:background="@drawable/colorbutton"
+        android:soundEffectsEnabled="false"
+        android:text="Db / C#"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toLeftOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/black2"
         android:layout_width="50dp"
         android:layout_height="250dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="6dp"
         android:background="@drawable/colorbutton"
+        android:soundEffectsEnabled="false"
+        android:text="Eb / D#"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toRightOf="@+id/black1"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/black3"
         android:layout_width="50dp"
         android:layout_height="250dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="60dp"
         android:background="@drawable/colorbutton"
+        android:soundEffectsEnabled="false"
+        android:text="Gb / F#"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toRightOf="@+id/black2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/black4"
         android:layout_width="50dp"
         android:layout_height="250dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="6dp"
         android:background="@drawable/colorbutton"
+        android:soundEffectsEnabled="false"
+        android:text="Ab / G#"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toRightOf="@+id/black3"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/black5"
         android:layout_width="50dp"
         android:layout_height="250dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="6dp"
         android:background="@drawable/colorbutton"
+        android:soundEffectsEnabled="false"
+        android:text="Bb / A#"
+        android:textColor="@android:color/white"
         app:layout_constraintLeft_toRightOf="@+id/black4"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/cmfButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/controllerbutton"
+        android:fontFamily="monospace"
+        android:text="STORE"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/controllerbutton"
+        android:fontFamily="monospace"
+        android:text="CLEAR"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintLeft_toRightOf="@+id/cmfButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/cmfButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
